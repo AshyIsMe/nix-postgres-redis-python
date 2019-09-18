@@ -8,10 +8,9 @@ pkgs.mkShell {
     postgresql
     (python3.withPackages
       (ps: [
-        ps.elasticsearch
-        ps.beautifulsoup4
-        ps.requests
-        ps.pytz
+        ps.sqlalchemy
+        ps.pandas
+        ps.psycopg2
        ]))
 ];
 }
